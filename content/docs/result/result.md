@@ -25,7 +25,7 @@ Console.WriteLine(result);
 Creates a Result instance representing a sucess.
 
 ```c#
-var result = Result.Success();
+var result = Result.Ok();
 Console.WriteLine(result);
 //true
 ```
@@ -34,7 +34,7 @@ Console.WriteLine(result);
 Creates a Result instance representing an error.
 
 ```c#
-var result = Result.Success();
+var result = Result.Error();
 Console.WriteLine(result);
 //false
 ```

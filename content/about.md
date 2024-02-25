@@ -3,4 +3,4 @@ title: About
 type: about
 ---
 
-This is the about page.
+© 2024 [William Santos](https://wsantos.dev)

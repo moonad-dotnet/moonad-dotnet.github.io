@@ -23,10 +23,8 @@ Since our main goal is to protect the user from `NullReferenceException` we stro
 
 F# offers in it's core library four monads to help you to have more flexibility when working with primitives and also potential null occurrences. So this library do the same.
 
-#### Choice
+#### [Choice]({{< relref "choice" >}})
 Also known as `Either` in some languages this monad offers you the possibility to choose one of N types to be hold by its instance.
-
-Example:
 
 ```c#
 public Choice<int, string> Choose(bool returnInt)
@@ -38,11 +36,11 @@ public Choice<int, string> Choose(bool returnInt)
 }
 ```
 
-#### Result
+####  [Result]({{< relref "result" >}})
 
 A type to express the final state of a given processing revealing its success of failure and optionally carrying a value or an error.
 
-Example 1 - Success indicator:
+Example: Success indicator
 
 ```c#
 public Result Send(Message message)
@@ -60,7 +58,7 @@ public Result Send(Message message)
 }
 ```
 
-Example 2 - Value and error returning:
+Example: Value and error returning
 
 ```c#
 public Result<User, IError> Create(...)
@@ -73,11 +71,11 @@ public Result<User, IError> Create(...)
 }
 ```
 
-#### Option
+#### [Option]({{< relref "option" >}})
 
 This monad, also known as `Maybe`, has as its goal preventing the `NullReferenceException` by notifying the existence or absense of a value. Once a potentially null, or simply absent, value is converted to Option it's evaluated to a `Some` instance, which carry the value, or a `None` instance, which replaces the `null` and let the client works as `null` doesn't exists.
 
-Example 1 - Preventing null from a 3rd party lib:
+Example: Preventing null from a 3rd party lib
 ```c#
 //lib.Method returns a string
 
@@ -90,16 +88,16 @@ if(option.IsNone)
     Console.WriteLine($"No returned value.");
 ```
 
-Example 2 - Creating an Option explicitly:
+Example: Creating an Option explicitly
 ```c#
 public Option<int> ReturnWhenGreaterThanZero(int input) =>
     input > 0 ? input : Option<int>.None;
 ```
 
-#### ValueOption
+#### [ValueOption]({{< relref "value-option" >}})
 It has the very same concept as Option but is intended to use with value types to be faster in performance critical scenarios.
 
-Example 1 - Preventing null from a 3rd party lib:
+Example: Preventing null from a 3rd party lib
 ```c#
 //lib.Method returns a nullable int
 
@@ -112,7 +110,7 @@ if(option.IsNone)
     Console.WriteLine($"No returned value.");
 ```
 
-Example 2 - Creating an Option explicitly:
+Example: Creating an Option explicitly
 ```c#
 public ValueOption<int> ReturnWhenGreaterThanZero(int input) =>
     input > 0 ? input : ValueOption<int>.None;
