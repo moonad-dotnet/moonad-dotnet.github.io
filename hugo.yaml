@@ -20,6 +20,11 @@ menu:
       url: "https://github.com/2hit-io/moonad"
       params:
         icon: github
+    - name: NuGet
+      weight: 2
+      url: "https://www.nuget.org/packages/Moonad"
+      params:
+        icon: nuget
 
 params:
   navbar:
