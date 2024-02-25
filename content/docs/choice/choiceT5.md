@@ -5,16 +5,50 @@ type: docs
 prev: /docs/choice/choiceT4
 ---
 
-##### Also known as Either in some languages this monad offers you the possibility to choose one of two types to be hold by its instance.
+#### Operators
 
-Example:
+##### Implicit T1
+Allows the client to get the value of T1 when it was chosen.
 
-```c# {filename="choice.cs"}
-public Choice<int, string> Choose(bool returnInt)
-{
-    if(returnInt)
-        return 1;
+```c#
+Choice<Circle, Square, Triangle, Rectangle, Hexagon> choice = new Circle(10);
+Console.WriteLine(choice);
+//This is a Circle with radius 10
+```
 
-    return "This is a Choice!";
-}
+##### Implicit T2
+Allows the client to get the value of T2 when it was chosen.
+
+```c#
+Choice<Circle, Square, Triangle, Rectangle, Hexagon> choice = new Square(20);
+Console.WriteLine(choice);
+//This is a Square with side 20
+```
+
+##### Implicit T3
+Allows the client to get the value of T3 when it was chosen.
+
+```c#
+Choice<Circle, Square, Triangle, Rectangle, Hexagon> choice = new Triangle(10, 10, 10);
+Console.WriteLine(choice);
+//This is a Triangle with sides 10, 10, 10
+```
+
+##### Implicit T4
+Allows the client to get the value of T4 when it was chosen.
+
+```c#
+Choice<Circle, Square, Triangle, Rectangle, Hexagon> choice = new Rectangle(10, 20);
+Console.WriteLine(choice);
+//This is a Rectangle with sides 10, 20
+```
+
+##### Implicit T5
+
+Allows the client to get the value of T5 when it was chosen.
+
+```c#
+Choice<Circle, Square, Triangle, Rectangle, Hexagon> choice = new Hexagon(10);
+Console.WriteLine(choice);
+//This is a Hexagon with sides 10
 ```
