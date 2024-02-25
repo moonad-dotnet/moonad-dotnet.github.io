@@ -9,6 +9,11 @@ This library contains the main F#'s monads found on FSharp.Core lib written in, 
 
 F# offers in it's core library four monads to help you to have more flexibility when working with primitives and also potential null occurrences. So this library do the same.
 
+#### Getting Started
+{{< cards >}}
+{{< card link="docs" title="Documentation" icon="result-icon" >}}
+{{< /cards >}}
+
 #### Monads
 
 {{< cards >}}
