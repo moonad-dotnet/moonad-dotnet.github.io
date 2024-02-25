@@ -1,9 +1,9 @@
 ---
-title: Moonad
+title: Welcome!
 toc: false
 ---
 
-A simple F#'s monads port for C#.
+Moonad is a simple F#'s monads port for C#.
 
 This library contains the main F#'s monads found on FSharp.Core lib written in, and adapted for, C#.
 
