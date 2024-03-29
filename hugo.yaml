@@ -17,7 +17,7 @@ menu:
   main:
     - name: GitHub
       weight: 2
-      url: "https://github.com/2hit-io/moonad"
+      url: "https://github.com/moonad-dotnet/moonad"
       params:
         icon: github
     - name: NuGet
