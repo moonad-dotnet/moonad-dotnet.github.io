@@ -4,7 +4,7 @@ weight: 1
 type: docs
 ---
 
-This a type to represent the presence or absense of a `T` value. If `T` is null it would be transformed in `None` and, if not, will be returned as `Some<T>`.
+This a type to represent the presence or absence of a `T` value. If `T` is null it would be transformed in `None` and, if not, will be returned as `Some<T>`.
 
 #### Operators
 

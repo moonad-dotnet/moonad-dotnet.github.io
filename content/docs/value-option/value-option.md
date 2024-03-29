@@ -4,7 +4,7 @@ weight: 1
 type: docs
 ---
 
-This a type to represent the presence or absense of a `T` when it is a value type.
+This a type to represent the presence or absence of a `T` when it is a value type.
 
 #### Operators
 
