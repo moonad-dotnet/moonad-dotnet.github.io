@@ -205,5 +205,15 @@ Returns an `Option<TResult>` with `TResult` if Result is Ok or a `Option.None<TR
 ```c#
 Result<int, IError> result = new CustomError("Error");
 Console.Write(result.ToOption());
-//Option.None
+//Option<TResult>.None
+```
+
+##### ToValueOption
+
+As `ToOption` but returning an instance of `ValueOption<TResult>`
+
+```c#
+Result<int, IError> result = new CustomError("Error");
+Console.Write(result.ToValueOption());
+//ValueOption<TResult>.None
 ```
