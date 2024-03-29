@@ -6,6 +6,6 @@ sidebar:
   open: true
 ---
 
-This monad, also known as `Maybe`, has as its goal preventing the `NullReferenceException` by notifying the existence or absense of a value. Once a potentially null, or simply absent, value is converted to Option it's evaluated to a `Some` instance, which carry the value, or a `None` instance, which replaces the `null` and let the client works as `null` doesn't exists.
+Also known as `Maybe`, this monad has as its goal preventing the `NullReferenceException` by notifying the existence or absense of a value. If the value of `T` is null it's converted to `None` and, if not, is just returned as `Some<T>` holding the `T` value.
 
 [Option&lt;T&gt;]({{< relref "option" >}})
