@@ -110,7 +110,7 @@ Console.Write(result.DefaultWith((e) => $"Result: {e}"));
 
 ##### Exists (Func&lt;TResult, bool&gt;)
 
-Verify if `TResult` matches a given predicate and returns `true` if so or `false` if not or Result is not Ok.
+Verify if `TResult` matches a given predicate and returns its result if so, or `false` if Result is not Ok.
 
 ```c#
 Result<int, IError> result = 1;
