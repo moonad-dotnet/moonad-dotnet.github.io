@@ -9,10 +9,10 @@ This library contains the main F#'s monads found on FSharp.Core lib written in, 
 
 #### Getting Started
 {{< cards >}}
-{{< card link="docs" title="Documentation" icon="result-icon" >}}
+{{< card link="docs" title="Introduction" icon="result-icon" >}}
 {{< /cards >}}
 
-#### Monads
+#### Monads Documentation
 
 {{< cards >}}
 {{< card link="docs/choice" title="Choice" icon="result-icon" >}}
