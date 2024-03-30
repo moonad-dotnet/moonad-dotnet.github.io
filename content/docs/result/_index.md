@@ -3,7 +3,7 @@ title: Result
 type: docs
 weight: 2
 sidebar:
-  open: true
+  open: false
 ---
 
 A type to express the final state of a given processing revealing its success of failure and optionally carrying a value or an error.

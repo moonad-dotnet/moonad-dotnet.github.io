@@ -3,7 +3,7 @@ title: Choice
 type: docs
 weight: 1
 sidebar:
-  open: true
+  open: false
 ---
 
 Also known as `Either` in some languages this monad offers you the possibility to choose one of N types to be hold by its instance.
