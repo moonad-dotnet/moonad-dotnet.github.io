@@ -40,6 +40,26 @@ else
 //"Some"
 ```
 
+#### Properties
+
+##### IsSome
+Indicates if an Option is Some, holding a T.
+
+```c#
+Option<int> option = 1;
+Console.WriteLine(option.IsSome);
+//true
+```
+
+##### IsNone
+Indicates if an Option is Nome, holding no value.
+
+```c#
+Option<int> option = Option.None<int>();
+Console.WriteLine(option.IsNome);
+//true
+```
+
 #### Methods
 
 ##### Bind&lt;TResult&gt; (Func&lt;T, Option&lt;TResult&gt;&gt;)

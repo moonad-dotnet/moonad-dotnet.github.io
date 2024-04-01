@@ -40,6 +40,26 @@ else
 //"Some"
 ```
 
+#### Properties
+
+##### IsSome
+Indicates if an ValueOption is Some, holding a T.
+
+```c#
+ValueOption<int> option = 1;
+Console.WriteLine(option.IsSome);
+//true
+```
+
+##### IsNone
+Indicates if an Option is Nome, holding no value.
+
+```c#
+Option<int> option = ValueOption<int>.None();
+Console.WriteLine(option.IsNome);
+//true
+```
+
 #### Methods
 
 ##### static Some(T)

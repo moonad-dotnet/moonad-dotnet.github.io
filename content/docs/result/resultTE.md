@@ -57,6 +57,44 @@ else
 //"Error"
 ```
 
+#### Properties
+
+##### IsOk
+Indicates if the operation was executed successfully.
+
+```c#
+var result = obj.Method(); //returns Ok
+Console.WriteLine(result.IsOk);
+//true
+```
+
+##### IsError
+Indicates if the operation was not executed successfully.
+
+```c#
+var result = obj.Method(); //returns Error
+Console.WriteLine(result.IsError);
+//true
+```
+
+##### ResultValue
+Returns `TResult` if Ok or throws a `ResultValueException` if Error.
+
+```c#
+Result<int, IError> result = obj.Method(); //returns 1
+Console.WriteLine(result.ResultValue);
+//1
+```
+
+##### ErrorValue
+Returns `TError` if Error or throws a `ErrorValueException` if OK.
+
+```c#
+Result<int, IError> result = obj.Method(); //returns new CustomError("Error")
+Console.WriteLine(result.ErrorValue);
+//"Error"
+```
+
 #### Methods
 
 ##### Bind&lt;U&gt; (Func<TResult, Result&lt;U, TError&gt;>)

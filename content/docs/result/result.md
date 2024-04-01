@@ -18,6 +18,25 @@ Result result = false;
 Console.WriteLine(result);
 //false
 ```
+#### Properties
+
+##### IsOk
+Indicates if the operation was executed successfully.
+
+```c#
+var result = obj.Method(); //returns Ok
+Console.WriteLine(result.IsOk);
+//true
+```
+
+##### IsError
+Indicates if the operation was not executed successfully.
+
+```c#
+var result = obj.Method(); //returns Error
+Console.WriteLine(result.IsError);
+//true
+```
 
 #### Methods
 
