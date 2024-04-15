@@ -190,9 +190,9 @@ option.Iter(() => Console.Write("It's ok!"));
 //"It's ok!"
 ```
 
-##### Map (Func&lt;T, Option&lt;T&gt;&gt;)
+##### Map (Func&lt;T, Option&lt;TResult&gt;&gt;)
 
-Returns the Option itself if `None` or the result of the given function applied to `T`.
+Returns the Option itself if `None` or the result of the given function applied to `T` as an `Option<TResult>`.
 
 ```c#
 Option<int> option = 1;
@@ -202,7 +202,18 @@ Console.Write(option.Map((r) => r > 0 ? true : false));
 
 ##### Map2 (Func&lt;Option&lt;T&gt;&gt;, Func&lt;T, T, Option&lt;T&gt;&gt;)
 
-Returns `None` if the Option itself and the first parameter Option are `None`, otherwise returns the result of the given function with the Option itself and the first parameter Option.
+Returns `None` if the Option itself and the first parameter are `None`, otherwise returns the result of the given function with the Option itself and the first parameter as an `Option<TResult>`.
+
+```c#
+Option<int> option1 = 1;
+Option<int> option2 = 2;
+Console.Write(option1.Map2((o1, o2) => o1 == o2 ? o1 : 0));
+//0
+```
+
+##### Map3 (Func&lt;Option&lt;T&gt;&gt;, Func&lt;Option&lt;T&gt;&gt;, Func&lt;T, T, T, Option&lt;TResult&gt;&gt;)
+
+Returns `None` if the Option itself and the first and second parameters are `None`, otherwise returns the result of the given function with the Option itself and the first and second parameters as an `Option<TResult>`.
 
 ```c#
 Option<int> option1 = 1;
