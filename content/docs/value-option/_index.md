@@ -1,11 +1,11 @@
 ---
 title: ValueOption
 type: docs
-weight: 4
+weight: 6
 sidebar:
   open: false
 ---
 
-It has the very same concept as [Option]({{< relref "/docs/option" >}}) but is intended to use with value types to be faster in performance critical scenarios.
+`ValueOption<T>` has the very same meaning of [`Option<T>`]({{< relref "/docs/option" >}}) but is intended to be used with value types to be faster in performance critical scenarios.
 
 [ValueOption&lt;T&gt;]({{< relref "value-option" >}})
