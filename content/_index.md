@@ -4,7 +4,9 @@ toc: false
 ---
 
 <br>
-A simple F# monads port library for C#.
+It's a simple F# monads port library for C#.
+
+Moonad is a lib created to allow C# developers to employ the very same monads found on F#. By using Moonad develpers can write more robust and safe applications with a smarter design.
 
 #### Getting Started
 {{< cards >}}
