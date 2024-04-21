@@ -22,3 +22,7 @@ Moonad is a lib created to allow C# developers to employ the very same monads fo
 {{< card link="docs/option" title="Option" icon="result-icon" >}}
 {{< card link="docs/value-option" title="ValueOption" icon="result-icon" >}}
 {{< /cards >}}
+
+<br>
+
+![Nuget](https://img.shields.io/nuget/dt/moonad?logo=nuget&label=Downloads&color=029632)
