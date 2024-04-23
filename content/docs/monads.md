@@ -40,8 +40,8 @@ Let's see `Bind` in action with one of the most known monad, the `Option<T>` typ
 ```c#
 var value = obj.Method() //retorna 50
                .ToOption<int>()
-               .Bind((v) => r > 0 ? "Maior que zero!" : "Menor ou igual a zero!")
-               .Contains("Maior que zero!");
+               .Bind((v) => r > 0 ? "Higher than zero!" : "Lower os equals zero!")
+               .Contains("Higher than zero!");
 Console.WriteLine(value);
 //true
 ```
