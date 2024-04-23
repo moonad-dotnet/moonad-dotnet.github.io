@@ -28,6 +28,6 @@ public Option<T> MyMethod(Whatever obj)
 }
 ```
 
-> **Info:** there is a value type version of `Option<T>` called [`ValueOption<T>`]({{< relref "/docs/value-option" >}}). It's specially usefull when dealing with hi-performance scenarios.
-
 [Option&lt;T&gt;]({{< relref "option" >}})
+
+> **Info:** there is a value type version of `Option<T>` called [`ValueOption<T>`]({{< relref "/docs/value-option" >}}). It's specially usefull when dealing with hi-performance scenarios.
