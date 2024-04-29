@@ -2,7 +2,6 @@
 title: Result
 weight: 1
 type: docs
-prev: /docs/result
 next: docs/result/resultTE
 ---
 
