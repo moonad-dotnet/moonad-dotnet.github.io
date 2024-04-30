@@ -38,7 +38,7 @@ Dispite the fact that to be a wrapper is a fundamental trait of a monad it don't
 Let's see `Bind` in action with one of the most known monad, the `Option<T>` type (a.k.a. `Maybe` in some other languages). Let's see the code:
 
 ```c#
-var value = obj.Method() //retorna 50
+var value = obj.Method() //returns 50
                .ToOption<int>()
                .Bind((v) => r > 0 ? "Higher than zero!" : "Lower os equals zero!")
                .Contains("Higher than zero!");
