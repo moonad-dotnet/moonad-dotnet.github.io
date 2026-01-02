@@ -63,7 +63,7 @@ Console.WriteLine(result.IsError);
 Returns `TError` if Error or throws a `ErrorValueException` if OK.
 
 ```c#
-Result<int, IError> result = obj.Method(); //returns new CustomError("Error")
+Result<IError> result = obj.Method(); //returns new CustomError("Error")
 Console.WriteLine(result.ErrorValue);
 //"Error"
 ```

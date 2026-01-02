@@ -33,12 +33,12 @@ So we have a type acting as a wrapper to `int` allowinfg operations as it was re
 It means that `Nullable<T>` is a monad? Actually not, but let's explore a little more.
 
 ### More than a wrapper
-Dispite the fact that to be a wrapper is a fundamental trait of a monad it don't discribe one totally. Besides allowing the wrapping of some value a monad needs to be able to perform transformations which require a special function to that, the `Bind` method in our case.
+Despite the fact that being a wrapper is a fundamental trait of a monad, it doesn’t completely describe what a monad is. Besides allowing the wrapping of some value a monad needs to be able to perform transformations which require a special function to that, the `Bind` method in our case.
 
 Let's see `Bind` in action with one of the most known monad, the `Option<T>` type (a.k.a. `Maybe` in some other languages). Let's see the code:
 
 ```c#
-var value = obj.Method() //retorna 50
+var value = obj.Method() //returns 50
                .ToOption<int>()
                .Bind((v) => r > 0 ? "Higher than zero!" : "Lower os equals zero!")
                .Contains("Higher than zero!");
