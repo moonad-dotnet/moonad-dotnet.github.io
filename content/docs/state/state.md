@@ -113,9 +113,9 @@ var (value, newState) = state.Run(5);
 // newState: 6 (5 + 1)
 ```
 
-## State Manipulation Methods
+#### Manipulation Methods
 
-### Get
+##### Get
 
 ```csharp
 public State<S, S> Get()
@@ -134,7 +134,7 @@ var (value, newState) = getState.Run(10);
 // newState: 10
 ```
 
-### Gets
+##### Gets
 
 ```csharp
 public State<S, T> Gets(Func<S, T> f)
@@ -161,7 +161,7 @@ var getScore = new State<GameState, int>(s => (0, s))
     .Gets(s => s.Score);
 ```
 
-### Modify
+##### Modify
 
 ```csharp
 public State<S, Unit> Modify(Func<S, S> f)
@@ -188,7 +188,7 @@ var increment = new State<Counter, Unit>(s => (Unit.Value, s))
     .Modify(c => c with { Count = c.Count + 1 });
 ```
 
-### Put
+##### Put
 
 ```csharp
 public State<S, Unit> Put(S newState)
