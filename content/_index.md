@@ -22,4 +22,4 @@ Moonad is a lib created to allow C# developers to employ the very same monads fo
 {{< card link="docs/state" title="State" icon="result-icon" >}}
 {{< /cards >}}
 
-<a href='https://ko-fi.com/B0B51RXT3I' target='_blank'><img height='30' style='border:0px;height:30px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<img alt="Static Badge" src="https://img.shields.io/badge/%24-Buy%20me%20a%20coffe-B69573?label=%24%24%24&labelColor=413130&link=https%3A%2F%2Fko-fi.com%2Fmoonad_dotnet">
