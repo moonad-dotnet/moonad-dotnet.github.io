@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Moonad — F# monads for C#">
 <meta name="twitter:description" content="Option, Result, Choice, ValueOption and State for C#.">
-<meta name="twitter:image" content="https://moonad.net/thumbnail.png?v=c12cd02de47c">
+<meta name="twitter:image" content="https://moonad.net/moonad-social-thumbnail.png?v=c12cd02de47b">
 <meta name="twitter:image:alt" content="Moonad — F# monads for C# developers. Option, Result, Choice, ValueOption and State.">
 <title>Moonad — F# monads for C#</title>
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -59,7 +59,7 @@ nav a:hover,nav a.on{color:var(--ink)}
 :root[data-theme="dark"] .theme .sun{display:block}
 :root[data-theme="dark"] .theme .moon{display:none}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme .sun{display:block}:root:not([data-theme="light"]) .theme .moon{display:none}}
-.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding:88px 0 72px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding-top:88px;padding-bottom:72px}
 h1{font-size:clamp(34px,5vw,56px);line-height:1.1;font-weight:500;letter-spacing:-.02em;margin:0 0 22px}
 .lead{color:var(--muted);font-size:19px;max-width:32em;margin:0 0 30px}
 .cta,.links{display:flex;flex-wrap:wrap;gap:12px}
@@ -90,13 +90,13 @@ pre{margin:0;font-size:13.5px;line-height:1.75;color:var(--code);overflow-x:auto
 .install code{font-size:15px;overflow-x:auto;white-space:nowrap}
 .copy{flex:none;font:500 14px "Outfit",sans-serif;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
 .copy:hover{border-color:var(--gold)}
-.page{padding:64px 0 80px;max-width:720px}
+.page{padding-top:64px;padding-bottom:80px;max-width:720px}
 .page h1{font-size:clamp(32px,4.4vw,46px)}
 .page h2{margin-top:44px;font-size:24px}
 .page p{margin:0 0 16px}
 .page .lead{margin-bottom:12px}
 .page code:not(pre code){font-size:.88em;background:var(--surface);padding:2px 6px;border-radius:5px}
-.docs{display:grid;grid-template-columns:210px 1fr;gap:56px;padding:56px 0 80px}
+.docs{display:grid;grid-template-columns:210px 1fr;gap:56px;padding-top:56px;padding-bottom:80px}
 .side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 88px);align-self:start;display:flex;flex-direction:column;gap:2px;font-size:15.5px}
 .side a{padding:7px 12px;border-left:2px solid var(--line);color:var(--muted)}
 .side a:hover{color:var(--ink)}
@@ -113,7 +113,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-bet
 footer .f{display:flex;gap:22px;flex-wrap:wrap}
 footer a:hover{color:var(--ink)}
 @media (max-width:820px){
-  .hero{grid-template-columns:1fr;padding:48px 0;gap:32px}
+  .hero{grid-template-columns:1fr;padding-top:48px;padding-bottom:48px;gap:32px}
   .mark-box{order:-1;max-width:340px}
   .compare{grid-template-columns:1fr}
   .types li a{grid-template-columns:1fr;gap:6px}
@@ -131,7 +131,7 @@ footer a:hover{color:var(--ink)}
 .bl{margin:0 0 16px;padding-left:22px}.bl li{margin:4px 0}
 .ln{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
 .doc h2,.doc h3{scroll-margin-top:8px}
-.docs.has-otp{max-width:1280px;grid-template-columns:210px minmax(0,720px) 200px;justify-content:center;gap:48px}
+.docs.has-otp{max-width:1280px;margin-left:max(0px,calc((100% - 1040px)/2));margin-right:0;grid-template-columns:210px minmax(0,720px) 200px;justify-content:start;gap:48px}
 .otp{position:sticky;top:calc(env(safe-area-inset-top,0px) + 88px);align-self:start;max-height:calc(100vh - env(safe-area-inset-top,0px) - 112px);overflow-y:auto;overscroll-behavior:contain;font-size:14.5px;line-height:1.4;scrollbar-width:thin}
 .otp-t{font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px 2px}
 .otp-l{display:flex;flex-direction:column;border-left:2px solid var(--line)}
@@ -141,14 +141,14 @@ footer a:hover{color:var(--ink)}
 .otp a.g:first-child{margin-top:0}
 .otp a.on{color:var(--ink);border-left-color:var(--gold)}
 @media (max-width:1100px){
-  .docs.has-otp{grid-template-columns:210px minmax(0,1fr);max-width:1040px;gap:56px}
+  .docs.has-otp{grid-template-columns:210px minmax(0,1fr);max-width:1040px;margin-left:auto;margin-right:auto;gap:56px}
   .otp{display:none}
 }
 @media (max-width:820px){.docs.has-otp{grid-template-columns:minmax(0,1fr);max-width:none;gap:28px}}
 .side .sub{padding-left:26px;font-size:14.5px}
 @media (max-width:820px){.side .sub{padding-left:14px}}
 
-.ab-hero{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;padding:80px 0 64px}
+.ab-hero{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;padding-top:80px;padding-bottom:64px}
 .eyebrow{display:inline-block;font-size:13.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;margin-bottom:22px}
 .ab-hero .mark{max-width:440px;margin-left:auto}
 .ab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -199,8 +199,8 @@ footer a:hover{color:var(--ink)}
   .soc{margin-left:-2px}.ico{width:22px;height:22px}.ico svg{height:14px}
   .theme{width:26px;height:26px}.theme svg{width:14px;height:14px}
 }
-@media (max-width:520px){header .wrap{padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}.bar{gap:4px}.brand svg{height:15px}nav{gap:10px;font-size:12.5px}.soc{gap:6px;margin-left:0}.ico{width:22px;height:22px}.ico svg{height:15px}.theme{width:26px;height:26px}}
-@media (max-width:400px){header .wrap{padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px))}.bar{gap:9px}nav{gap:9px;font-size:12px}.soc{gap:5px}.ico{width:20px;height:20px}.ico svg{height:14px}.brand svg{height:12px}.theme{width:24px;height:24px}.theme svg{width:13px;height:13px}}
+@media (max-width:520px){.bar{gap:4px}.brand svg{height:15px}nav{gap:10px;font-size:12.5px}.soc{gap:6px;margin-left:0}.ico{width:22px;height:22px}.ico svg{height:15px}.theme{width:26px;height:26px}}
+@media (max-width:400px){.bar{gap:9px}nav{gap:9px;font-size:12px}.soc{gap:5px}.ico{width:20px;height:20px}.ico svg{height:14px}.brand svg{height:12px}.theme{width:24px;height:24px}.theme svg{width:13px;height:13px}}
 @media (max-width:340px){.soc{display:none}}
 </style>
 </head>
