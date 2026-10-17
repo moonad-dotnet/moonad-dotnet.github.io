@@ -171,6 +171,19 @@ footer a:hover{color:var(--ink)}
 .ico:hover{background:var(--surface);color:var(--gold-ink)}
 @media (max-width:520px){.soc{margin-left:-6px;gap:0}.ico{width:28px;height:28px}.ico svg{height:17px}}
 @media (max-width:400px){.wrap{padding:0 14px}.brand svg{height:16px}nav{gap:7px;font-size:12.5px}.soc{margin-left:-4px}.ico{width:24px;height:24px}.ico svg{height:15px}.theme{width:28px;height:28px}}
+@media (max-width:820px){
+  .wrap,.wrap.docs,.wrap.docs.has-otp{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+  .mark-box{display:none}
+  .compare{grid-template-columns:minmax(0,1fr)}.panel{min-width:0}
+  .hero,.ab-hero{padding-top:36px}
+}
+@media (max-width:400px){
+  .bar{gap:6px}.brand svg{height:14px}
+  nav{gap:5px;font-size:12px}
+  .soc{margin-left:-2px}.ico{width:22px;height:22px}.ico svg{height:14px}
+  .theme{width:26px;height:26px}.theme svg{width:14px;height:14px}
+}
+@media (max-width:340px){.soc{display:none}}
 </style>
 </head>
 <body>
