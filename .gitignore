@@ -1,1 +1,4 @@
 erros.txt
+**/.vs/**
+**/.vscode/**
+**/.idea/**
